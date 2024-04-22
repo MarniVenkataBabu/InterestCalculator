@@ -1,0 +1,59 @@
+.container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #343a40, rgba(52, 58, 64, 0.8)), url('images/color.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="number"], input[type="date"], input[type="button"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus, input[type="date"]:focus, input[type="button"]:focus {
+    outline: none;
+}
+
+input[type="number"]:hover, input[type="date"]:hover, input[type="button"]:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"]:active, input[type="date"]:active, input[type="button"]:active {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#result, #totalInterest {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+#result {
+    margin-bottom: 10px;
+}
+
+#totalInterest {
+    font-weight: bold;
+}
